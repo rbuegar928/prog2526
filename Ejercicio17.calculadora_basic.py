@@ -16,4 +16,4 @@ elif operación == "/" :
     num2 = int(input("Introduzca el divisor: "))
     print("La división es igual a ", num1 / num2)
 else :
-    print("Operación no válida, pruebe suma, resta, multiplicación o división.")
+    print("Operación no válida.")
