@@ -1,3 +1,4 @@
+# Calcular si un año es bisiesto
 anyo = int(input("Intrduzca el año: "))
 if (anyo % 4 == 0 and not anyo % 100 == 0) or (anyo % 400 == 0):
     print ("El año", anyo, " es un año bisiesto.")

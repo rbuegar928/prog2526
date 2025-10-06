@@ -1,3 +1,4 @@
+# Calcular el mayor de dos números
 num1 = input ("Introduce el primer número: ")
 num2 = input ("Introduce el segundo número: ")
 if num1 > num2:

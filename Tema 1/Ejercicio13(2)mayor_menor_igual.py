@@ -1,3 +1,4 @@
+# Calcular el mayor de dos números o si son iguales
 num1 = int(input ("Introduce el primer número: "))
 num2 = int(input ("Introduce el segundo número: "))
 if num1 > num2:

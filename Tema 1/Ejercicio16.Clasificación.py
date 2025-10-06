@@ -1,3 +1,4 @@
+# Definir que calificación tienes según tu nota
 nota = int(input("Intruduzca su nota: "))
 match nota:
     case 0|1|2|3|4:

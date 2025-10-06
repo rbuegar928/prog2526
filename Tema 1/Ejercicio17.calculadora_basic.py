@@ -1,3 +1,4 @@
+#Calculadora basica
 operación = input("Indique la operación que quiere realizar\n+ para suma\n- para resta\n* para multiplicación\n/ para división: ")
 if operación == "+" :
     num1 = int(input("Introduzca el primer sumando: "))
@@ -17,4 +18,4 @@ elif operación == "/" :
     resultado = (num1 / num2)
 else :
     print("Operación no válida.")
-print("El resultado es", resultado)
+print("El resultado es", resultado) #ponemos el print al final para ahorrarnos poner print despues de cada if/elif
