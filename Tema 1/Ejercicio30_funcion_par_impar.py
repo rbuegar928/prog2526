@@ -1,4 +1,4 @@
-# Función que deuvuelva si el número leído es par o impar
+# Función que devuelva si el número leído es par o impar
 
 def parimpar(N1):
     if N1 % 2 == 0:
