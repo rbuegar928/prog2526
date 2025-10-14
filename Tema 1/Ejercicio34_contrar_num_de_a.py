@@ -11,5 +11,5 @@ def cuentaYReemplaza(texto):
     nuevoTexto = texto.replace("a", "x").replace("A", "X").replace("e", "x").replace("E", "X").replace("i", "x").replace("I", "X").replace("o", "x").replace("O", "X").replace("u", "x").replace("U", "X")
     return nuevoTexto
 # Invocar funciones
-texto = input("Introduzca una frase prar contar su número de a: ")
+texto = input("Introduzca una frase prar contar su número de vocales: ")
 print(cuentaYReemplaza(texto))
