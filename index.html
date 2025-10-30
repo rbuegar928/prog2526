@@ -1,15 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Index Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+    <title>
+        Mi portfolio
+    </title>
+
+    <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
-    <h1>Mi Blog</h1>
-    <p>This is the main entry point of your website.</p>
-    <ul>
-        <li><a href="https://sites.google.com/d/1tGpxqwezSid6UeZER0ObtFmpvOsRsT-Q/p/1Gt0TRUZerMoQjlczjBAKaD5rdSmGDu4g/edit">Mi Página 1 DAW</a></li>
-    </ul>
+
+
+    <header class="header" role="banner" id="top">
+        <div class="row">
+            <nav class="nav" role="navigation">
+                <ul class="nav__items">
+                    <li class="nav__item"><a href="#work" class="nav__link">Trabajo</a></li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__text-box row">
+            <div class="header__text">
+                <h1 class="heading-primary">
+                    <span>Raúl Bueno García</span>
+                </h1>
+                <p>Portfolio programación 1DAW.</p>
+                <a href="#contact" class="btn btn--pink">Sobre este blog/portfolio.</a>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+
+
+        <section class="work" id="work">
+            <div class="row">
+                <h2>Mis trabajos de este curso.</h2>
+                <div class="work__boxes">
+
+
+                    <div class="work__box">
+                        <div class="work__text">
+                            <h3>Sitios</h3>
+                            <p>
+                                Páginas donde quedarán registradas mis actividades y tareas.
+                            </p>
+
+                            <div class="work__links">
+                                <a href="https://sites.google.com/d/1tGpxqwezSid6UeZER0ObtFmpvOsRsT-Q/p/1Gt0TRUZerMoQjlczjBAKaD5rdSmGDu4g/edit"
+                                    target="_blank" class="link__text">
+                                    Enlace Google Sites <span>&rarr;</span>
+                                </a>
+                                <a href="https://sites.google.com/d/1tGpxqwezSid6UeZER0ObtFmpvOsRsT-Q/p/1Gt0TRUZerMoQjlczjBAKaD5rdSmGDu4g/edit"
+                                    title="Visita mi página de programación de Google Sites" target="_blank">
+                                    <img src="https://imgs.search.brave.com/W-mlJTfLV7IRGkGSLU5sCgM7qbLwN1Ont_CjgpDyNa8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jb211/bmljYS13ZWIuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIz/LzA2L0dvb2dsZS1T/aXRlcy0xMDI0eDUw/Ni53ZWJw"
+                                        class="work__code" alt="GoogleSites">
+                                </a>
+                            </div>
+                            <div class="work__links">
+                                <a href="https://github.com/rbuegar928" target="_blank" class="link__text">
+                                    Enlace GitHub <span>&rarr;</span>
+                                </a>
+                                <a href="https://github.com/rbuegar928/prog2526"
+                                    title="Visita mi página de programación de GitHub" target="_blank">
+                                    <img src="https://imgs.search.brave.com/EKfOjrhFBLq4fnRyj95o6-qSNMUzdb9xsFv2BA-AM3E/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9uYWZ0/aWMuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI0LzExL2dp/dGh1Yi5qcGc"
+                                        class="work__code" alt="GitHub">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="work__box">
+                        <div class="work__text">
+                            <h3>Ejercicios Tema 1</h3>
+                            <p>
+                                Aquí están los ejercicios de GitHub del Tema 1.
+                            </p>
+
+                            <div class="work__links">
+                                <a href="https://github.com/rbuegar928/prog2526/tree/master/Tema%201"
+                                    class="link__text">
+                                    Ejercicios PROG Tema 1 GitHub <span>&rarr;</span>
+                                </a>
+                                <a href="https://github.com/rbuegar928/prog2526/tree/master/Tema%201">
+                                    <img src="https://imgs.search.brave.com/EKfOjrhFBLq4fnRyj95o6-qSNMUzdb9xsFv2BA-AM3E/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9uYWZ0/aWMuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI0LzExL2dp/dGh1Yi5qcGc"
+                                        class="work__code" title="View Source Code" alt="GitHub">
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+    </main>
+
+
+    <section class="contact" id="contact">
+        <div class="row">
+            <h2>Contacto</h2>
+            <div class="contact__info">
+                <p>
+                    Este es el portfolio en el que se registrará el progreso que vamos a realizar a lo largo
+                    del curso 25/26 en nuestro módulo de programación de 1DAW. Poco a poco durante el
+                    curso este mismo blog o portfolio irá siendo actualizado con las distintas unidades que
+                    vayamos realizando.
+                </p>
+                <a href="mailto:rbuegar928@g.educaand.es" class="btn">rbuegar928@g.educaand.es</a>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
