@@ -1,8 +1,10 @@
-def maximo (t):
- for i in t:
 
-    
-return mayor
+def maximo (a):
+    valMax= a[0]
+    for i in range(len(a)):
+        if a[i] > valMax:
+            valMax = a[i]
+    return valMax
 
 
 a = [5,3,2,8,1]
