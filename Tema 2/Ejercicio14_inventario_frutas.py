@@ -9,7 +9,7 @@ inventario.extend(cargasGrandes)
 inventario.insert(2,"Plátanos Frescos")
 # Venta y Descarte
 producto_vendido = inventario.pop(-1)
-inventario.pop(-3)
+inventario.remove("Peras")
 # Reporte de emergencia
 reporte_urgente = inventario[0:4]
 
