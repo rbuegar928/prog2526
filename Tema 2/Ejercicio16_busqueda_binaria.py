@@ -9,6 +9,7 @@ def busquedaBinaria (a,objetivo):
             i = len(a)//2
         else:
             return(objetivo)
+    return i
 
 num = [0,10,20,30,40,50,60,70,80,90]
 objetivo = int(input("Introduzca su número objetivo: "))
