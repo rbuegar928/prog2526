@@ -3,7 +3,7 @@ def buscarNum (lista, n):
     respuesta = -1
     while i < len(lista) and respuesta == -1:
         if lista[i] == n:
-            respuesta = (f"El número {n} está en la posición {i}")
+            respuesta = i
         i = i + 1 
     return(respuesta)
 
