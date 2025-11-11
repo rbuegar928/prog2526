@@ -1,16 +1,24 @@
-def busquedaBinaria (a,objetivo):
-    i = len(a)//2
-    while a[i] != objetivo:
-        if a[i] < objetivo:
-            a = a[i:len(a)]
-            i = len(a)//2
-        elif a[i] > objetivo:
-            a = a[0:i]
-            i = len(a)//2
+def busquedaBinaria(numeros,eleccion):
+    izq = 0
+    der = len(numeros) - 1
+    medio = 0
+    while izq <= der:
+        medio = (izq + der) // 2
+        if numeros[medio] == eleccion:
+            return medio
+        elif numeros[medio] < eleccion:
+            izq = medio + 1
         else:
-            return(objetivo)
-    return i
+            der = medio - 1
+    return -1
 
-num = [0,10,20,30,40,50,60,70,80,90]
-objetivo = int(input("Introduzca su número objetivo: "))
-print(busquedaBinaria(num,objetivo))
+
+#numeros = [0,10,20,30,40,50,60,70,80,90]
+#eleccion = int(input("Elije el numero que quieras multiplo de 10: "))
+
+#resultado = busquedaBinaria(numeros,eleccion)
+
+#if resultado != -1:
+#    print("El numero",eleccion,"se encuentra en la posicion",(resultado + 1))
+#else:
+#    print("Ese numero no se encuentra.")

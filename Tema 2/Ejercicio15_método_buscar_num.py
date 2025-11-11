@@ -8,12 +8,12 @@ def buscarNum (lista, n):
     return(respuesta)
 
 
-import random
+#import random
 
-num = []
-for i in range(5):
-    numero = random.randint(0, 10)  # Generar un número entre 0 y 10
-    num.append(numero)
+#num = []
+#for i in range(5):
+#    numero = random.randint(0, 10)  # Generar un número entre 0 y 10
+#    num.append(numero)
 
-n = int(input("Introduzca el número que quiere buscar (entre 0 y 10): "))
-print(buscarNum(num,n))
+#n = int(input("Introduzca el número que quiere buscar (entre 0 y 10): "))
+#print(buscarNum(num,n))
