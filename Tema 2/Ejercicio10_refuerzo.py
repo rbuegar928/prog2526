@@ -1,13 +1,14 @@
 #Algoritmo que dice si tres arrays son iguales ignorando mayus
 def comparar(a,b,c):
     #Comparar longitudes de las listas
-    if len(a) == len(b) == len(c):
-        #Recorrer listas comparando letras
-        for i in range(len(a)):
-            if a[i].lower() != b[i].lower() or a[i].lower() != c[i].lower() or b[i].lower() != c[i].lower:
-                return  False
-    else:
+    if len(a) != len(b) \
+       or len(b) != len(c):
         return False
+    #Recorrer listas comparando letras
+    for i in range(len(a)):
+        if a[i].lower() != b[i].lower() \
+           or b[i].lower() != c[i].lower():
+            return  False
     
     return True
     
