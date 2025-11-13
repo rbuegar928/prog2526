@@ -5,15 +5,15 @@ def iguales(a, b):
     if l1 == l2:
         for i in range(l1):
             if a[i] != b[i]:
-                return  False
-            else:
-                return True
+                return False
     else:
         return False
-        
+    
+    return True
+
 #Creo los dos arrays
 a = [1,2,3,4,5]
-b = [1,3,5,2,4]
+b = [1,5,3,2,4]
 
   
     
