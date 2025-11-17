@@ -14,3 +14,13 @@ for fila in M:
     for e in fila:
         print(e, end=" ")
     print()
+
+print("----------------------------------")
+M2 = [[0,0,0],[0,0,0],[0,0,0]]
+for i in range (len(M)):
+    for e in range (len(M[i])):
+        if M[i][e] % 2 == 0:
+            M2[i][e] = M[i][e]
+            M[i][e] = 0
+print(M)
+print(M2)
