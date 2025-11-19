@@ -17,6 +17,6 @@ print("------------------------------------------------------")
 
 clase = "titulo"
 contenido = "Mi Encabezado"
-etiqueta = (f"<h1 class={clase}>{contenido}</h1>")
+etiqueta = (f"<h1 class=\"{clase}\">{contenido}</h1>")
 
 print(etiqueta)
