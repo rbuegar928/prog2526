@@ -22,10 +22,10 @@ public class Ejercicio23 {
             numero = sc.nextInt();
 
             if (numero >= a && numero <= b) {
-                System.out.println("El numero estÃ¡ dentro del rango.");
+                System.out.println("El numero está dentro del rango.");
             }
             else {
-                System.out.println("El numero estÃ¡ fuera del rango.");
+                System.out.println("El numero está fuera del rango.");
             }
 
         } while (numero < a || numero > b);
