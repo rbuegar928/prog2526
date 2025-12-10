@@ -1,3 +1,5 @@
+package ProyectoTema3;
+
 import java.util.Scanner;
 
 public class ProyectoTema3 {
