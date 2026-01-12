@@ -1,0 +1,10 @@
+package ejerciciosProgUD3;
+
+public class EjerciciosJava {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("HolaMundo");
+    }
+    
+}
