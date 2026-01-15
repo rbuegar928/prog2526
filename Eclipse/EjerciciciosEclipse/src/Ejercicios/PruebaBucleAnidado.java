@@ -1,6 +1,3 @@
-package Ejercicios;
-
-
 public class PruebaBucleAnidado {
 	
 	public static void main(String[] args) {
