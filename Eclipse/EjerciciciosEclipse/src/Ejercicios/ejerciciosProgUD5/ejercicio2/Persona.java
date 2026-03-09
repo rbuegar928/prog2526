@@ -16,6 +16,10 @@ public class Persona {
         this.dia = dia;
         this.sexo = sexo; 
     }
+    
+    public Persona() {
+    	
+    }
 
     public void cumplirAños() {
         edad++;
@@ -30,7 +34,6 @@ public class Persona {
     }
 
     // Metodo toString
-    @Override
     public String toString() {
         return "Nombre: " + nombre + " " + apellido + ", Edad: " + edad + ", Estatura: " + estatura +
                ", Dia: " + dia + ", Sexo: " + sexo;

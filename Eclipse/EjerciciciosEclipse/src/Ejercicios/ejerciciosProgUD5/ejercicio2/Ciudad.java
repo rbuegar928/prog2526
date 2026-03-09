@@ -16,7 +16,7 @@ public class Ciudad {
 		persona3.setNombre("Juan"); // Modificamos el nombre de Paco para que se llame Juan
 		System.out.println("Se actualizo el nombre de la persona a: " + persona3.getNombre());
 		
-		persona1.cumplirAños(); // Utilizamos metodo para que la persona1 tenga 1 año mas
+		persona1.cumplirAños(); // Utilizamos metodo para que la persona1 tenga 1 año más
 		persona2.setEdad(42);   // Utilizamos metodo set para actualizar la edad a 42
 		persona3.crecer(0.14);	// Utilizamos metodo para que persona3 aumente su estatura
 		
@@ -24,7 +24,6 @@ public class Ciudad {
 		System.out.println(persona1);
 		System.out.println(persona2);
 		System.out.println(persona3);
-		
 		
 }
 }
