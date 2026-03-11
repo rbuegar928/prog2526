@@ -1,19 +1,19 @@
 package ejerciciosProgUD5.ejercicio7;
 
-public class Coche extends Vehiculo{
+public class Coche extends Vehiculo {
 	private int numPuertas;
 	
-	Coche(String marca, String modelo, int anio, int numPuertas){
+	Coche (String marca, String modelo, int anio, int numPuertas) {
 		super(marca, modelo, anio);
 		this.numPuertas = numPuertas;
 	}
 	
 	public void mostrarDetalles() {
 		super.mostrarDetalles();
-		System.out.println("Nº puertas:  + numPuertas");
+		System.out.println("Nº puertas: " + numPuertas);
 	}
 	
 	public void mover() {
-		System.out.println("Me muevo con 4 ruedas.");
+		System.out.println("Me muevo con 4 ruedas");
 	}
 }
