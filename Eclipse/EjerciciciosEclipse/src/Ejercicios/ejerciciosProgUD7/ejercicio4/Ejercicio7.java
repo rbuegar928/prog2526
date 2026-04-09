@@ -1,0 +1,49 @@
+package ejerciciosProgUD7.ejercicio4;
+
+import java.util.Scanner;
+
+import ejerciciosProgUD7.ejercicio5.NumeroRepetido;
+
+public class Ejercicio7 {
+
+	public static void main(String[] args) {
+		try {
+			introduceEnteros();
+		} catch (NumeroRepetido e) {
+			e.printStackTrace();
+			System.out.println(e.getMessage());
+		} finally {
+			System.out.println("Fin");
+		}
+		System.out.println("Finalísmo");
+	}
+	
+	private static void introduceEnteros() throws IllegalArgumentException{
+		int[] lista = new int[5];
+		lista[0] = 0;
+		lista[1] = 12;
+		lista[2] = 20;
+		lista[3] = 13;
+		lista[4] = 40;
+		
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		
+		if (estaEnLista(lista, num))
+			throw new NumeroRepetido("Número repetido");
+		
+		for (int e: lista) {
+			System.out.println(e);
+		}
+	}
+	
+	private static boolean estaEnLista(int[] lista, int num) {
+		for (int e: lista) {
+			if (e == num)
+				return true;
+		}
+		return false;
+	}
+	
+
+}
