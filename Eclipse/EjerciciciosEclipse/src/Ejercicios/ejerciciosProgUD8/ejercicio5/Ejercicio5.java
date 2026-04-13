@@ -1,6 +1,8 @@
 package ejerciciosProgUD8.ejercicio5;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class Ejercicio5 {
@@ -30,6 +32,21 @@ public class Ejercicio5 {
 		Primos.add(3);
 		
 		// Comprobar si es subconjunto
+		boolean esSubconjunto = Enteros.containsAll(Primos);
+		System.out.println("¿Es subconjunto? " + esSubconjunto);
+		
+		// Lista final con los valores del conjunto
+		final List<Integer> lista = new ArrayList<Integer>(Enteros);
+				
+		System.out.println(lista);
+				
+		// No es inmutable porque final solo impide cambiar la referencia
+				
+		// Podemos modificar su contenido:
+		lista.add(10);
+		lista.remove(0);
+				
+		System.out.println(lista);
 	}
 
 }
