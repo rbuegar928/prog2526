@@ -14,8 +14,7 @@ public class Main {
 		
 		// 3. Conversión (Parsing)
 		for (String notaTexto : notasEntrada) {
-			Double notaNumero = Double.valueOf(notaTexto);
-		    notas.add(notaNumero);
+		    notas.add(Double.valueOf(notaTexto));
 		    }
 		System.out.println("Notas: " + notas);
 
