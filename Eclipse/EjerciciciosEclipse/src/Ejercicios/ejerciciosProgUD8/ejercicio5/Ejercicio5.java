@@ -8,7 +8,7 @@ import java.util.Set;
 public class Ejercicio5 {
 	public static void main(String[] args) {
 		// Conjunto vacío
-		Set<Integer> Enteros = new HashSet<Integer>();
+		Set<Integer> Enteros = new HashSet<>();
 		// Agregar 5 primeros números naturales
 		Enteros.add(0);
 		Enteros.add(1);
@@ -36,11 +36,11 @@ public class Ejercicio5 {
 		System.out.println("¿Es subconjunto? " + esSubconjunto);
 		
 		// Lista final con los valores del conjunto
-		final List<Integer> lista = new ArrayList<Integer>(Enteros);
+		final List<Integer> lista = new ArrayList<>(Enteros);
 				
 		System.out.println(lista);
 				
-		// No es inmutable porque final solo impide cambiar la referencia
+		// No es inmutable porque final solo impide cambiar la referencia, hace que se pueda modificar pero no reasignar
 				
 		// Podemos modificar su contenido:
 		lista.add(10);
