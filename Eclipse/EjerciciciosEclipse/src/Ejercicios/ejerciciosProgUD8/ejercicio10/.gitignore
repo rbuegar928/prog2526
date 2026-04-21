@@ -1,2 +1,11 @@
 /Main.class
 /ComparadorEdad.class
+/ComparadorEdad$compareApellido.class
+/ComparadorEdad$compararApellido.class
+/Persona.class
+/Persona$ComparadorEdad$compararApellido.class
+/Persona$ComparadorEdad.class
+/Persona$compararApellido.class
+/Persona$ComparadorNombreApellido.class
+/ComparadorApellido.class
+/ComparadorEntero.class
