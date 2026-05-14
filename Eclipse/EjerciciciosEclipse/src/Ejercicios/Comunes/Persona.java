@@ -1,6 +1,8 @@
 package Comunes;
 
-public class Persona implements Comparable{
+import java.io.Serializable;
+
+public class Persona implements Comparable, Serializable{
     private String nombre;
     private String apellido;
     private int edad;
