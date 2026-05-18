@@ -15,32 +15,39 @@ public class LectorConfiguracion {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
 
-            //TODO: 2. Parsear el archivo XML
+            // 2. Parsear el archivo XML
             File file = new File("config.xml");
-            
-            Document document = builder.parse(file);
-            System.out.println("Documento parseado!");
+            Document documento = builder.parse(file);
 
             // Opcional pero recomendado: Normaliza el árbol XML
-            //documento.getDocumentElement().normalize();
+            documento.getDocumentElement().normalize();
 
-            //TODO: 3. Obtener el elemento raíz (<configuracion>)
-           
-            //TODO: 4. Obtener los hijos de <base-datos>
-            // NodeList listaBaseDatos =
+            // 3. Obtener el elemento raíz (<configuracion>)
+            Element raiz = documento.getDocumentElement();
+
+            System.out.println("Elemento raíz: " + raiz.getNodeName());
+
+            // 4. Obtener los hijos de <base-datos>
+            NodeList hijosBaseDatos = raiz.getElementsByTagName("base-datos");
+
             // Tomamos el primero
-            // Node nodoBaseDatos =
-            //TODO: 5. Vamos a ver sus hijos directos
-            // NodeList hijos =
-            // System.out.println("\nNúmero de hijos detectados: " + _____);
-            
-            System.out.println("--- Listando hijos ---");
-           //TODO: Mostrar todos los nodos
+            Node primeroBaseDatos = hijosBaseDatos.item(0);
 
+            // 5. Vamos a ver sus hijos directos
+            NodeList hijos = primeroBaseDatos.getChildNodes();
+
+            System.out.println("\nNúmero de hijos detectados: " + hijos.getLength());
+
+            System.out.println("--- Listando hijos ---");
+
+            // Mostrar todos los nodos
+            for (int i = 0; i < hijos.getLength(); i++) {
+
+                Node hijo = hijos.item(i);
 
                 System.out.println("Hijo " + i + " -> Tipo: " + hijo.getNodeType() + " | Nombre: " + hijo.getNodeName());
             
-
+        } 
         } catch (Exception e) {
             e.printStackTrace();
         }
