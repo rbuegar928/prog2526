@@ -2,8 +2,6 @@ package ejerciciosProgUD8.ejercicio10;
 
 import java.util.Comparator;
 
-import Comunes.Persona;
-
 public class ComparadorEntero implements Comparator<Persona>{
 
 	@Override

@@ -1,7 +1,5 @@
 package ejerciciosProgUD5.ejercicio2;
 
-import ejerciciosProgUD5.ejercicio2.Persona.Sexo;
-
 public class Ciudad {
     public static void main(String[] args){
         Persona persona1 = new Persona("Emilio", "Roca", 19, 1.80, DiaDeLaSemana.MARTES, Sexo.MASCULINO);

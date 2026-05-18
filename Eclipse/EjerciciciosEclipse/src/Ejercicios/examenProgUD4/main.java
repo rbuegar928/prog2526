@@ -1,8 +1,5 @@
 package examenProgUD4;
 
-import examenProgUD4.ExamenUD4.TipoVehiculo;
-import examenProgUD4.ExamenUD4.Vehiculo;
-
 public class main {
 
 	public static void main(String[] args) {

@@ -5,8 +5,6 @@ import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-import Comunes.Persona;
-
 public class Main {
     public static void main(String[] args) {
 

@@ -1,8 +1,7 @@
 package ejerciciosProgUD8.ejercicio1;
 
-import java.util.List;
 import java.util.ArrayList;
-import Comunes.Persona;
+import java.util.List;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package Comunes;
+package comunes;
 
 import java.io.Serializable;
 

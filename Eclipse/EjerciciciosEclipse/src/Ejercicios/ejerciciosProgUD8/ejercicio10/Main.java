@@ -3,8 +3,6 @@ package ejerciciosProgUD8.ejercicio10;
 import java.util.Set;
 import java.util.TreeSet;
 
-import Comunes.Persona;
-
 public class Main {
 
 	public static void main(String[] args) {

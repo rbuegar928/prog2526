@@ -2,7 +2,7 @@ package ejerciciosProgUD7.ejercicio4;
 
 import java.util.Scanner;
 
-import ejerciciosProgUD7.ejercicio5.NumeroRepetido;
+import Ejercicios.ejerciciosProgUD7.ejercicio5.NumeroRepetido;
 
 public class Ejercicio7 {
 

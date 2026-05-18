@@ -1,17 +1,17 @@
 package EjerciciosRefuerzo;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 public class EjercicioRefuerzo {
 
     public static void main(String[] args) {
 
         List<String> alumnos = new ArrayList<>(Arrays.asList(
-                "Raúl Miami", "Carrero Oriyinal", "Perales", "Decarex Fake", "Antoñito",
-                "Copet's", "Raúh Malo", "Atalay", "Pinar", "Oscah", "Jhonas", "Hoce Mari")
+                "Raï¿½l Miami", "Carrero Oriyinal", "Perales", "Decarex Fake", "Antoï¿½ito",
+                "Copet's", "Raï¿½h Malo", "Atalay", "Pinar", "Oscah", "Jhonas", "Hoce Mari")
         );
         
         Collections.shuffle(alumnos);
