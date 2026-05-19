@@ -17,20 +17,24 @@ public class CreadorConfiguracion {
             // === FASE 1: Inicializar el documento vacío ===
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
-            Document documento = __________________ // Documento en blanco
+            Document documento = builder.newDocument(); // Documento en blanco
 
             // === FASE 2: Construir el árbol de Nodos/Elementos ===
             
-            // TODO: Crear el elemento raíz <videojuego>
+            // Crear el elemento raíz <videojuego>
+            Element raiz = documento.createElement("videojuego");
 
+            // Añadirlo al documento
+            documento.appendChild(raiz);
 
-            // TODO: Añadirlo al documento
+            // Crear el elemento <pantalla>
+            Element pantalla = documento.createElement("pantalla");
 
-            // TODO: Crear el elemento <pantalla>
- 
-            // TODO: asignarle atributo 
+            // Asignarle atributo
+            pantalla.setAttribute("resolucion", "1920x1080");
 
-            // TODO: asignarle el texto interno
+            // Asignarle el texto interno
+            pantalla.setTextContent("textoInternoDePantalla");
                      
             // ¡Crucial! Si no lo añades a la raíz, el nodo queda flotando en memoria
             raiz.appendChild(pantalla);
@@ -41,7 +45,8 @@ public class CreadorConfiguracion {
             audio.setTextContent("false");
             
             // TODO: Añadirlo al árbol en el lugar correcto
-
+            raiz.appendChild(audio);
+            
             // === FASE 3: El "Transformer" (Exportar memoria a archivo físico) ===
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
@@ -54,8 +59,9 @@ public class CreadorConfiguracion {
             DOMSource origen = new DOMSource(documento);
             StreamResult destino = new StreamResult(new File("juego_config.xml"));
 
-            // TODO: Serializar utilizando el método transform del transformer
-
+            // Serializar el documento XML
+            transformer.transform(origen, destino);
+            
             System.out.println("¡Archivo XML generado con éxito de manera estructurada!");
 
         } catch (Exception e) {
