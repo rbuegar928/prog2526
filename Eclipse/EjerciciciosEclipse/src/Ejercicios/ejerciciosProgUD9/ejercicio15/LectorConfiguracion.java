@@ -44,8 +44,10 @@ public class LectorConfiguracion {
             for (int i = 0; i < hijos.getLength(); i++) {
 
                 Node hijo = hijos.item(i);
-
-                System.out.println("Hijo " + i + " -> Tipo: " + hijo.getNodeType() + " | Nombre: " + hijo.getNodeName());
+                if (hijo.getNodeType() == Node.ELEMENT_NODE) {
+                	
+                	System.out.println("Hijo " + i + " -> Tipo: " + hijo.getNodeType() + " | Nombre: " + hijo.getNodeName());
+                }
             
         } 
         } catch (Exception e) {
