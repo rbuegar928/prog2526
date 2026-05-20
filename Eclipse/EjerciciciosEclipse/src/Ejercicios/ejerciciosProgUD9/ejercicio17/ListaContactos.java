@@ -1,7 +1,9 @@
-package ejerciciosProgUD9.ejercicio16;
+package ejerciciosProgUD9.ejercicio17;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.transform.OutputKeys;
@@ -9,42 +11,56 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import java.io.File;
 
-public class CreadorConfiguracion {
-    public static void main(String[] args) {
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+
+import comunes.Persona;
+
+public class ListaContactos {
+
+	public static void main(String[] args) {
+		List<Persona> contactos = new ArrayList<>();
+		contactos.add(new Persona( "Joaquín", "Calle Narváez n 12", "600111222"));
+        contactos.add(new Persona("Luis", "Avenida Montserrat n 8", "666777888"));
+        contactos.add(new Persona( "Adolfo", "Avenida Tigres n 3", "688444333"));
+        contactos.add(new Persona( "Manuela", "Calle Pintores n 14", "611223344"));
+        contactos.add(new Persona( "Paco", "Calle Fiestas n 1", "69987766"));
+        
         try {
-            // === FASE 1: Inicializar el documento vacío ===
+            // Inicializar el documento vacío
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document documento = builder.newDocument(); // Documento en blanco
 
-            // === FASE 2: Construir el árbol de Nodos/Elementos ===
+            // 
             
-            // Crear el elemento raíz <videojuego>
-            Element raiz = documento.createElement("videojuego");
+            // Crear el elemento raíz <contactos>
+            Element raiz = documento.createElement("contactos");
 
             // Añadirlo al documento
             documento.appendChild(raiz);
 
             // Crear el elemento <pantalla>
-            Element pantalla = documento.createElement("pantalla");
+            Element persona = documento.createElement("persona");
 
             // Asignarle atributo
-            pantalla.setAttribute("resolucion", "1920x1080");
+            persona.setAttribute("nombre", "Joaquín");
+            persona.setAttribute("direccion", "Calle Narváez n 12");
+            persona.setAttribute("telefono", "600111222");
 
             // Asignarle el texto interno
-            pantalla.setTextContent("textoInternoDePantalla");
+            persona.setTextContent("textoInternoDePantalla");
                      
             // ¡Crucial! Si no lo añades a la raíz, el nodo queda flotando en memoria
             raiz.appendChild(pantalla);
 
-            // TODO: Crear el elemento <audio>, asignarle atributo y texto interno
+            // Crear el elemento <audio>, asignarle atributo y texto interno
             Element audio = documento.createElement("audio");
             audio.setAttribute("volumen", "80");
             audio.setTextContent("false");
             
-            // TODO: Añadirlo al árbol en el lugar correcto
+            // Añadirlo al árbol en el lugar correcto
            
             raiz.appendChild(audio);
             
@@ -68,5 +84,6 @@ public class CreadorConfiguracion {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
+	}
+
 }

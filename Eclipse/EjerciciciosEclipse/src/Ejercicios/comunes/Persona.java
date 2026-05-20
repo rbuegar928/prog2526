@@ -6,11 +6,22 @@ public class Persona implements Comparable, Serializable{
     private String nombre;
     private String apellido;
     private int edad;
+    private String direccion;
+    private String telefono;
+    
+    public Persona() {
+    	
+    }
     
     public Persona(String nombre, String apellido, int edad){
     	this.nombre = nombre;
     	this.apellido = apellido;
     	this.edad = edad;
+    }
+    public Persona(String nombre, String direccion, String telefono){
+    	this.nombre = nombre;
+    	this.direccion = direccion;
+    	this.telefono = telefono;
     }
 
     public Persona(String nombre, int edad){
