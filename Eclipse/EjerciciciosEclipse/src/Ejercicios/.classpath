@@ -7,5 +7,6 @@
 	</classpathentry>
 	<classpathentry kind="src" path=""/>
 	<classpathentry kind="lib" path="Calculadora.jar"/>
+	<classpathentry kind="lib" path="C:/Users/08_1DAW_Alum/Desktop/ObjectDB/bin/objectdb-2.9.5.jar"/>
 	<classpathentry kind="output" path=""/>
 </classpath>

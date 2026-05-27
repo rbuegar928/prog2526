@@ -1,0 +1,19 @@
+package Ejercicio3;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class Ejercicio3 {
+	public static void main(String[] args) {
+		try (FileInputStream fis = new FileInputStream("icono.png");
+				FileOutputStream fos = new FileOutputStream("copia.png")) {
+			int byteData;
+			while ((byteData = fis.read()) != -1) {
+				fos.write(byteData); // Escribe el byte en el destino
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}
