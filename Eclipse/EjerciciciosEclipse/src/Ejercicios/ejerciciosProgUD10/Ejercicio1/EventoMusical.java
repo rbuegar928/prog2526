@@ -3,8 +3,10 @@ package ejerciciosProgUD10.Ejercicio1;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.sql.Date;
+import java.util.ArrayList;
 import java.util.List;
 
+import javax.jdo.annotations.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -27,7 +29,8 @@ public class EventoMusical implements Serializable{
     private Date fecha;
     private BigDecimal recaudacion;
     private GeneroMusical Genero;
-    private List<Artista> artistas;
+    @Embedded
+    private List<Artista> artistas = new ArrayList<>();
     @Transient
     private int control;
     
@@ -47,6 +50,31 @@ public class EventoMusical implements Serializable{
 		this.fecha = fecha;
 		this.recaudacion = recaudacion;
 		this.Genero = Genero;
+		this.artistas = new ArrayList();
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public List<Artista> getArtistas() {
+		return artistas;
+	}
+
+	public void setArtistas(List<Artista> artistas) {
+		this.artistas = artistas;
+	}
+
+	public int getControl() {
+		return control;
+	}
+
+	public void setControl(int control) {
+		this.control = control;
 	}
 
 	public String getNombreEvento() {
