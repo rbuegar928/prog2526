@@ -1,4 +1,4 @@
-package ejerciciosProgUD10.Ejercicio2;
+package ejerciciosProgUD10.ejercicio2;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -52,6 +52,14 @@ public class EventoMusical implements Serializable {
 	
 	public void agregarArtista(Artista artista) {
 		artistas.add(artista);
+	}
+
+	public GeneroMusical getGenero() {
+		return genero;
+	}
+
+	public void setGenero(GeneroMusical genero) {
+		this.genero = genero;
 	}
 
 }

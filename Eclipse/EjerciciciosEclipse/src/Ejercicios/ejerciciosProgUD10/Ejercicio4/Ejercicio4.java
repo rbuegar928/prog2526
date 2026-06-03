@@ -12,7 +12,7 @@ import javax.persistence.TypedQuery;
 import ejerciciosProgUD10.Ejercicio1.EventoMusical.GeneroMusical;
 import ejerciciosProgUD10.ejercicio2.Artista;
 
-public class Main {
+public class Ejercicio4 {
 
     public static void main(String[] args) {
 

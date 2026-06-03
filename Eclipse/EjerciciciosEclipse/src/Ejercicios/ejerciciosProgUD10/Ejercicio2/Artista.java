@@ -1,4 +1,4 @@
-package ejerciciosProgUD10.Ejercicio2;
+package ejerciciosProgUD10.ejercicio2;
 
 import java.io.Serializable;
 

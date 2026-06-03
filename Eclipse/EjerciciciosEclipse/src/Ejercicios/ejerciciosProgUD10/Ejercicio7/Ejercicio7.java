@@ -12,7 +12,7 @@ import javax.persistence.TypedQuery;
 import ejerciciosProgUD10.Ejercicio1.EventoMusical.GeneroMusical;
 import ejerciciosProgUD10.ejercicio2.Artista;
 
-public class Main {
+public class Ejercicio7 {
 
     public static void main(String[] args) {
 
@@ -94,7 +94,7 @@ public class Main {
         // Cogemos evento como el evento que vamos a modificar
         EventoMusical eventoModificar = em.find(EventoMusical.class, evento.getId());
         // Ponemos el nombre que tiene evento en mayúsculas
-        eventoModificar.setNombre(eventoModificar.getNombre().toUpperCase());
+        eventoModificar.setNombreEvento(eventoModificar.getNombreEvento().toUpperCase());
 
         em.getTransaction().commit();
 
@@ -133,7 +133,7 @@ public class Main {
         EventoMusical eventoOriginal = em.find(EventoMusical.class, evento.getId());
         // Creamos la copia con los datos del original, con todo excepto el Id
         EventoMusical copiaEvento = new EventoMusical(
-                eventoOriginal.getNombre(),
+                eventoOriginal.getNombreEvento(),
                 eventoOriginal.getFecha(),
                 eventoOriginal.getRecaudacion(),
                 eventoOriginal.getGenero());

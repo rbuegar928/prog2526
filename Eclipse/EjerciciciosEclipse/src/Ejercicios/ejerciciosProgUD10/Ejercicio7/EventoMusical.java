@@ -80,10 +80,10 @@ public class EventoMusical implements Serializable {
 	}
 
 	public String getNombreEvento() {
-		return nombreEvento;
+		return getNombreEvento();
 	}
 	public void setNombreEvento(String nombreEvento) {
-		this.nombreEvento = nombreEvento;
+		this.nombre = nombreEvento;
 	}
 	public Date getFecha() {
 		return fecha;
@@ -98,17 +98,19 @@ public class EventoMusical implements Serializable {
 		this.recaudacion = recaudacion;
 	}
 	public GeneroMusical getGenero() {
-		return Genero;
+		return genero;
 	}
 
 	public void setGenero(GeneroMusical genero) {
-		this.Genero = genero;
+		this.genero = genero;
 	}
 	public void agregarArtista(Artista artista) {
 		artistas.add(artista);
 	}
 	@Override
 	public String toString() {
-		return "EventoMusical: " + nombreEvento + ", fecha: " + fecha + ", recaudacion: " + recaudacion;
+		return "EventoMusical: " + nombre + ", fecha: " + fecha + ", recaudacion: " + recaudacion;
 
+		
+	}
 }

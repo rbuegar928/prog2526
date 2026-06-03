@@ -2,6 +2,8 @@ package ejerciciosProgUD10.Ejercicio4;
 
 import java.io.Serializable;
 
+import javax.persistence.Embeddable;
+
 // Es para embeber artista, es decir, no tendrá una tabla propia en la base de datos y sus campos se 
 // almacenarán como columnas de la entidad que la contenga, por ejemplo eventoMusical
 @Embeddable

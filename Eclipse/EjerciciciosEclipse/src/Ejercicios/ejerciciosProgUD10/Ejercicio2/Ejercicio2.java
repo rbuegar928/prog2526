@@ -1,4 +1,4 @@
-package ejerciciosProgUD10.Ejercicio2;
+package ejerciciosProgUD10.ejercicio2;
 
 import java.math.BigDecimal;
 import java.sql.Date;
@@ -12,7 +12,7 @@ import javax.persistence.TypedQuery;
 import ejerciciosProgUD10.Ejercicio1.EventoMusical.GeneroMusical;
 import ejerciciosProgUD10.ejercicio2.Artista;
 
-public class Main {
+public class Ejercicio2 {
 
     public static void main(String[] args) {
 
