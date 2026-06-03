@@ -3,6 +3,7 @@ package ejerciciosProgUD11.Ejercicio1;
 import java.awt.Button;
 import java.awt.Color;
 import java.awt.Frame;
+import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -32,7 +33,7 @@ public class Ejercicio1 {
 		}
 		});
 		
-		Button escribir = new Button("Escribe algo...");
+		TextField escribir = new TextField("Escribe algo...");
 		escribir.addActionListener(new ActionListener(){
 		@Override
 		public void actionPerformed(ActionEvent e) {
@@ -44,9 +45,9 @@ public class Ejercicio1 {
 		limpiar.setBounds(100, 50, 70, 30);
 		escribir.setBounds(30, 90, 140, 30);
 	
-	frame.add(salir);
-	frame.add(limpiar);
-	frame.add(escribir);
+		frame.add(salir);
+		frame.add(limpiar);
+		frame.add(escribir);
 	}
 
 }
