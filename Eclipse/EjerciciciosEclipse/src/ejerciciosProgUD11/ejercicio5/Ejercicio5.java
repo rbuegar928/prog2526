@@ -1,6 +1,5 @@
 package ejerciciosProgUD11.ejercicio5;
 
-import java.awt.BorderLayout;
 import java.awt.Frame;
 import java.awt.Label;
 import java.awt.Menu;
