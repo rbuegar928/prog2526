@@ -1,4 +1,4 @@
-package ejerciciosProgUD11.ejercicio5;
+package ejerciciosProgUD11.Ejercicio5;
 
 import java.awt.Frame;
 import java.awt.Label;
